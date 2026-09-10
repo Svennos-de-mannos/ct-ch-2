@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.flex-header {
+  background-color: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  width: 1500px;
+  margin-left: calc(50vw - 750px);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.flex-header-logo {
+  margin: 0 5px;
+  float: left;
+  margin-left: 0;
+}
+.flex-header-hamburger {
+  float: left;
+  background-color: #f8f8f8;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  padding: 15px;
+  text-align: center;
+}
+.flex-header-hamburger span {
+  transform: rotate(90deg);
+  display: block;
+  font-size: 25px;
+}
+.flex-header-login {
+  float: right;
+  height: 30px;
+  padding: 15px 20px;
+  background: #f8f8f8;
+  border-radius: 120px;
+  line-height: 27px;
+}
+.flex-header-seek {
+  padding: 15px;
+  background: #f8f8f8;
+  border-radius: 100%;
+  float: right;
+}
+.flex-header .item {
+  margin: 0px 5px;
+}
+
+.slider {
+  margin-left: calc(50vw - 750px);
+  margin-top: 70px;
+}
+
+.main {
+  width: 1500px;
+  margin-left: calc(50vw - 750px);
+  margin-top: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+.grid-item-1 {
+  grid-area: 1/1/3/2;
+  height: 445px;
+  background-color: #ff6600;
+  text-align: center;
+  border-radius: 30px;
+  padding: 20px;
+}
+.grid-item-2 {
+  grid-area: 1/2/2/3;
+  background-color: black;
+  color: white;
+}
+.grid-item-3 {
+  grid-area: 2/2/3/3;
+  background-color: #b5edff;
+}
+.grid-item-4 {
+  grid-area: 1/3/2/4;
+  background-color: #ffbacf;
+}
+.grid-item-5 {
+  grid-area: 2/3/3/4;
+  background-color: #bea174;
+}
+.grid-item-6 {
+  grid-area: 1/4/2/5;
+  background-color: #00b6de;
+}
+.grid-item-7 {
+  grid-area: 2/4/3/5;
+  background-color: #ff4d00;
+}
+.grid-item-2, .grid-item-3, .grid-item-4, .grid-item-5, .grid-item-6, .grid-item-7 {
+  height: 200px;
+  padding: 20px;
+  border-radius: 30px;
+}
+.grid-item-1, .grid-item-2, .grid-item-3, .grid-item-4, .grid-item-5, .grid-item-6, .grid-item-7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.grid-item-1 img, .grid-item-2 img, .grid-item-3 img, .grid-item-4 img, .grid-item-5 img, .grid-item-6 img, .grid-item-7 img {
+  max-height: 150px;
+  margin: 0 auto;
+}
+.grid-item-1 p, .grid-item-2 p, .grid-item-3 p, .grid-item-4 p, .grid-item-5 p, .grid-item-6 p, .grid-item-7 p {
+  margin: 0;
+  font-weight: bold;
+}
+.grid-item-1 .top, .grid-item-2 .top, .grid-item-3 .top, .grid-item-4 .top, .grid-item-5 .top, .grid-item-6 .top, .grid-item-7 .top {
+  text-align: left;
+}
+.grid-item-1 .bottom, .grid-item-2 .bottom, .grid-item-3 .bottom, .grid-item-4 .bottom, .grid-item-5 .bottom, .grid-item-6 .bottom, .grid-item-7 .bottom {
+  text-align: right;
+  opacity: 0;
+}
+.grid-item-1:hover .bottom, .grid-item-2:hover .bottom, .grid-item-3:hover .bottom, .grid-item-4:hover .bottom, .grid-item-5:hover .bottom, .grid-item-6:hover .bottom, .grid-item-7:hover .bottom {
+  opacity: 100;
+}/*# sourceMappingURL=style.css.map */
